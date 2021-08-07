@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Morghan York</title>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="css/index.css">
+       <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        
+        /* The Modal (background) */
+        .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          padding-top: 100px; /* Location of the box */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(222, 208, 182); /* Fallback color */
+          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+        
+        /* Modal Content */
+        .modal-content {
+          background-color: #ded0b6;
+          margin: auto;
+          padding: 20px;
+          border: 1px solid #888;
+          width: 80%;
+        }
+        
+        /* The Close Button */
+        .close {
+          color: #aaaaaa;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+          color: #000;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        </style>
+   
+    </head> 
+   <body>
+    <main>
+        <!--********************** ABOUT ME / PROFILE **********************-->
+        <header class="Header Header--top">
+            <div class="Header-inner Header-inner--top" data-nc-group="top">
+                <div data-nc-container="top-left">
+                    <a href="/" class="Header-branding" data-nc-element="branding" data-content-field="site-title">
+                        <img src="images/long-logo.png" alt="Morghan York Logo" class="Header-branding-logo" width=350>
+                  </a>
+                </div>
+                <div data-nc-container="top-center">
+                    <nav class="Header-nav Header-nav--primary" data-nc-element="primary-nav" data-content-field="navigation">
+                        <div class="Header-nav-inner">
+                            <a href="#about" class="Header-nav-item Header-nav-item--active" data-test="template-nav">About</a>
+                            <a href="#skills" class="Header-nav-item Header-nav-item--active" data-test="template-nav">Skills</a>
+                            <a href="#work" class="Header-nav-item Header-nav-item--active" data-test="template-nav">Work</a>
+                            <a href="#footer" class="Header-nav-item Header-nav-item--active" data-test="template-nav">Contact</a>
+                        </div>
+                    </nav>
+                </div>
+
+            </div>
+            <div class="hero">
+                <img src="images/hero image.JPG" alt=" " width= 1000>
+            </div>
+            <!--<div class="topnav in-line">
+                <div class="logo">
+                    <img src="images/long-logo.png" alt=" " width= 350>
+                    <a class="active" href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#work">Work</a>
+                </div>
+            </div>
+            <div class="hero">
+                <img src="images/hero image.JPG" alt=" " width= 1000>
+            </div>-->
+            
+        </header>
+
+        <section class="about">
+            <div class="content-wrap">
+                <h1 class="header">About</h1>
+                <p>Hi, you guys! I am Morghan York, a freelance UX/UI designer. I specialize in user research and product design, print, and website design.</p>
+                <p>I enjoy listening to user and client wishes and needs to deliver a product that adequately services those criteria.</p>
+                <p>I will soon graduate from the UX/UI Design Bootcamp at Georgia Tech in September 2021. My ideal client enjoys the process of talking through their wants and needs to collaborate on a product that reflects their personality.</p>
+            </div>
+
+            <body>
+             <div class="content-wrap">
+                <h3 class="header">Contact Now!</h3>
+                
+                <!-- Trigger/Open The Modal -->
+                <button id="myBtn">Click Here</button>
+                
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Contact Now!</p>
+                    <ul class="contact-list">
+                        <li>Email: <a href="mailto:mowilliams331@gmail.com">mowilliams331@gmail.com</a></li>
+                        <li>Mobile: (843) 496-4122</li>
+                    </ul>
+                  </div>
+                
+                </div>
+                
+                <script>
+                // Get the modal
+                var modal = document.getElementById("myModal");
+                
+                // Get the button that opens the modal
+                var btn = document.getElementById("myBtn");
+                
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+                
+                // When the user clicks the button, open the modal 
+                btn.onclick = function() {
+                  modal.style.display = "block";
+                }
+                
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
+                  modal.style.display = "none";
+                }
+                
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                  if (event.target == modal) {
+                    modal.style.display = "none";
+                  }
+                }
+                  </script>
+                 </div>
+                </body>
+        </section>
+        
+        <!--********************** SKILLS **********************-->
+        <section class="skills">
+            <div class="content-wrap">
+                <h1 class="header">Skills</h1>
+                <div class=" skills-row in-line">
+                    
+                        <p>Figma</p>
+                        <p>Miro</p>
+                        <p>Invision</p>
+                        <p>Google Drive</p>
+                    
+                </div>
+            
+            <div>
+                <h3>User Research</h3>
+                <p class="center">As a UX researcher I am able to analyze data and implement the design process. I also have soft skills in adaptability,  an understanding of human behaviors, and a willingness to collaborate.</p>
+            </div>
+            <div>
+                <h3>User Empathy</h3>
+                <p class="center">I am able to understand the users’ needs and motivations, along with the users' frustrations, reasoning, and goals through user research.
+                </p>
+            </div>
+            <div>
+                <h3>Qualitative Research</h3>
+                <p class="center"  >I use qualitative interviews to analyze and organize findings into data that gives insight into the users’ pains and gains.</p>
+            </div>
+            </div>
+        </section>
+
+        <!--********************** WORK **********************-->
+        <section class="work">
+            <div class="content-wrap">
+                <h1 class="header">Work</h1>
+                <div class="container box box-row"> 
+                    <img src="images/Gov Card.png" alt=" " width= 250>
+                    <img src="images/IAB Card.png" alt=" " width= 250>
+                    <img src="images/Share Card.png" alt=" " width= 250>
+                </div>
+            </div>
+        </section>
+        <!--********************** CONTACT INFO / FOOTER **********************-->
+            <footer>
+                <div class="content-wrap">
+                    <h4 class="contact">Contact Information</h4>
+                    <ul class="contact-list">
+                        <li>Charlotte, N.C.</li>
+                        <li><a href="mailto:mowilliams331@gmail.com">mowilliams331@gmail.com</a></li>
+                        <li>(843) 496-4122</li>
+     
+                    </ul>
+                </div>
+            </footer>
+    </main>
+   </body>
+</html>
